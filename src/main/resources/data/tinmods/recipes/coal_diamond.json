@@ -23,11 +23,11 @@
     }
   },
   "pattern": [
-    "B#B",
-    "XAY",
+    "BAB",
+    "X#Y",
     "BZB"
   ],
   "result": {
-    "item": "tinmods:purified_coal_nugget"
+    "item": "tinmods:coal_diamond"
   }
 }
