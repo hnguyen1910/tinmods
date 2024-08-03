@@ -13,6 +13,8 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.tin.tinmods.item.ModCreativeTabs;
+import net.tin.tinmods.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -23,6 +25,9 @@ public class TinMods {
 
     public TinMods() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         

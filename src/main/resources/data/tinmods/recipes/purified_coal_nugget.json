@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "easy_diamond",
+  "key": {
+    "#": {
+      "item": "minecraft:coal"
+    },
+    "X": {
+      "item": "minecraft:redstone"
+    },
+    "Z": {
+      "item": "minecraft:iron_ingot"
+    },
+    "Y": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "item": "minecraft:quartz"
+    },
+    "A": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "B#B",
+    "XAY",
+    "BZB"
+  ],
+  "result": {
+    "item": "tinmods:purified_coal_nugget"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "group": "easy_diamond",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "tinmods:coal_diamond"
+  },
+  "result": "minecraft:diamond"
+}
