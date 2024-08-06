@@ -1,6 +1,0 @@
-{
-  "parent" : "item/generated",
-  "textures": {
-    "layer0": "tinmods:item/purified_coal_nugget"
-  }
-}
