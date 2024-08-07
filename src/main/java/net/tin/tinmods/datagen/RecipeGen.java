@@ -59,6 +59,7 @@ public class RecipeGen extends RecipeProvider implements IConditionBuilder {
                 .define('D',Items.DIAMOND)
                 .define('E',Items.EMERALD)
                 .define('S', ItemTags.STAIRS)
+                .unlockedBy(getHasName(ModBlocks.THRONE_BLOCK.get()),has(ModBlocks.THRONE_BLOCK.get()))
                 .save(pWriter);
     }
 
