@@ -58,7 +58,8 @@ public class RecipeGen extends RecipeProvider implements IConditionBuilder {
                 .define('G',Items.GOLD_INGOT)
                 .define('D',Items.DIAMOND)
                 .define('E',Items.EMERALD)
-                .define('S', ItemTags.STAIRS);
+                .define('S', ItemTags.STAIRS)
+                .save(pWriter);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
