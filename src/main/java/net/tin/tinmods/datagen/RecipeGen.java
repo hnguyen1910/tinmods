@@ -2,6 +2,7 @@ package net.tin.tinmods.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.tin.tinmods.TinMods;
+import net.tin.tinmods.block.ModBlocks;
 import net.tin.tinmods.item.ModItems;
 
 import java.util.List;
@@ -48,7 +50,15 @@ public class RecipeGen extends RecipeProvider implements IConditionBuilder {
                 .unlockedBy(getHasName(Items.LEATHER),has(Items.LEATHER))
                 .save(pWriter);
 
-        cut(pWriter,RecipeCategory.MISC,ModItems.PURIFIED_COAL_NUGGET.get(),ModItems.COAL_DIAMOND.get());
+        stonecutterResultFromBase(pWriter,RecipeCategory.MISC,ModItems.PURIFIED_COAL_NUGGET.get(),ModItems.COAL_DIAMOND.get(),1);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THRONE_BLOCK.get(),1)
+                .pattern("G G")
+                .pattern("DSD")
+                .pattern("E E")
+                .define('G',Items.GOLD_INGOT)
+                .define('D',Items.DIAMOND)
+                .define('E',Items.EMERALD)
+                .define('S', ItemTags.STAIRS);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

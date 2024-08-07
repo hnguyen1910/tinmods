@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "tinmods:poop"
+    },
+    "title": {
+      "translate": "advancements.poop.title"
+    },
+    "description": "wow",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "tinmods:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "tinmods:poop"
+          ]
+        }
+      }
+    }
+  },
+  "sends_telemetry_event": false
+}
+

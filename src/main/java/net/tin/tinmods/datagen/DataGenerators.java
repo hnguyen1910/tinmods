@@ -30,6 +30,7 @@ public class DataGenerators {
         BlockTagGen blockTagGenerator = dataGenerator.addProvider(event.includeServer(),
                 new BlockTagGen(packOutput, lookupProvider, existingFileHelper));
         dataGenerator.addProvider(event.includeServer(), new ItemTagGen(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+        dataGenerator.addProvider(event.includeServer(), new PoiTypeTagGen(packOutput, lookupProvider,  existingFileHelper));
 
     }
 }

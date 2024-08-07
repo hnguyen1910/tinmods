@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.tin.tinmods.TinMods;
+import net.tin.tinmods.block.ModBlocks;
 
 public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -22,6 +23,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.PURIFIED_COAL_NUGGET.get());
                         output.accept(ModItems.COAL_DIAMOND.get());
                         output.accept(Items.DIAMOND);
+                        output.accept(ModBlocks.THRONE_BLOCK.get());
+                        output.accept(ModItems.POOP.get());
                     })
                     .build());
 

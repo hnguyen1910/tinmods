@@ -15,6 +15,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COAL_DIAMOND = ITEMS.register("coal_diamond",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POOP = ITEMS.register("poop",
+            () -> new Item(new Item.Properties().food(ModFoods.POOP)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

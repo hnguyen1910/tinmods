@@ -1,6 +1,15 @@
 {
   "item.tinmods.purified_coal_nugget": "Purified Coal Nugget",
   "item.tinmods.coal_diamond": "Coal Diamond",
+  "item.tinmods.poop": "Poop",
 
-  "creativetab.tinmod_tab": "Tin Mods"
+  "block.tinmods.throne": "Throne",
+
+  "creativetab.tinmod_tab": "Tin Mods",
+
+  "entity.minecraft.villager.tinmods.king": "Village King",
+
+  "advancements.poop.title": "You ate poop",
+  "advancements.root.title": "Tin Mods",
+  "advancements.root.description": "Welcome to Tin Modifications!"
 }
