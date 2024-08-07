@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tinmods:throne"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_throne": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tinmods:throne"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_throne",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tinmods:throne"
+    ]
+  },
+  "sends_telemetry_event": false
+}
