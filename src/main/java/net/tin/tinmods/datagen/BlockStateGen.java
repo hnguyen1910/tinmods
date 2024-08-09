@@ -16,7 +16,9 @@ public class BlockStateGen extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         simpleBlockWithItem(ModBlocks.THRONE_BLOCK.get(), models().getExistingFile(modLoc("block/throne")));
+
     }
+
 
 
 

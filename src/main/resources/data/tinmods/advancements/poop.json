@@ -15,7 +15,7 @@
   "parent": "tinmods:root",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:using_item",
+      "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "items": [
