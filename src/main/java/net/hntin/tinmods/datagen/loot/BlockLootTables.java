@@ -1,10 +1,10 @@
-package net.tin.tinmods.datagen.loot;
+package net.hntin.tinmods.datagen.loot;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
-import net.tin.tinmods.block.ModBlocks;
+import net.hntin.tinmods.block.ModBlocks;
 
 import java.util.Set;
 

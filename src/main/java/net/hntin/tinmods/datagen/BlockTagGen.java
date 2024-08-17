@@ -1,4 +1,4 @@
-package net.tin.tinmods.datagen;
+package net.hntin.tinmods.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -6,8 +6,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.tin.tinmods.TinMods;
-import net.tin.tinmods.block.ModBlocks;
+import net.hntin.tinmods.TinMods;
+import net.hntin.tinmods.block.ModBlocks;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;

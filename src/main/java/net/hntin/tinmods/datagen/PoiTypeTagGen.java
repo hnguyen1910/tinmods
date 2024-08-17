@@ -1,4 +1,4 @@
-package net.tin.tinmods.datagen;
+package net.hntin.tinmods.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -6,7 +6,7 @@ import net.minecraft.data.tags.PoiTypeTagsProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.PoiTypeTags;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.tin.tinmods.TinMods;
+import net.hntin.tinmods.TinMods;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;

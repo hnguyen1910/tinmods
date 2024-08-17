@@ -1,9 +1,9 @@
-package net.tin.tinmods.datagen;
+package net.hntin.tinmods.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.tin.tinmods.datagen.loot.BlockLootTables;
+import net.hntin.tinmods.datagen.loot.BlockLootTables;
 
 import java.util.List;
 import java.util.Set;

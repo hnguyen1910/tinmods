@@ -1,4 +1,4 @@
-package net.tin.tinmods.item;
+package net.hntin.tinmods.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

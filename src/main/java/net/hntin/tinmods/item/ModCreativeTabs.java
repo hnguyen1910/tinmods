@@ -1,4 +1,4 @@
-package net.tin.tinmods.item;
+package net.hntin.tinmods.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -8,8 +8,8 @@ import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import net.tin.tinmods.TinMods;
-import net.tin.tinmods.block.ModBlocks;
+import net.hntin.tinmods.TinMods;
+import net.hntin.tinmods.block.ModBlocks;
 
 public class ModCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =

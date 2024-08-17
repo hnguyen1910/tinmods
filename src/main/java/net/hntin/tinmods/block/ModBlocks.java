@@ -1,4 +1,4 @@
-package net.tin.tinmods.block;
+package net.hntin.tinmods.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -9,8 +9,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.tin.tinmods.TinMods;
-import net.tin.tinmods.item.ModItems;
+import net.hntin.tinmods.TinMods;
+import net.hntin.tinmods.item.ModItems;
 
 import java.util.function.Supplier;
 

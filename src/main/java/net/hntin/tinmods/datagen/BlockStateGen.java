@@ -1,12 +1,12 @@
-package net.tin.tinmods.datagen;
+package net.hntin.tinmods.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
-import net.tin.tinmods.TinMods;
-import net.tin.tinmods.block.ModBlocks;
+import net.hntin.tinmods.TinMods;
+import net.hntin.tinmods.block.ModBlocks;
 
 public class BlockStateGen extends BlockStateProvider {
     public BlockStateGen(PackOutput output, ExistingFileHelper exFileHelper) {

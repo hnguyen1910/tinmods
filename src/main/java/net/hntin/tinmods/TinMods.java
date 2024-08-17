@@ -1,4 +1,4 @@
-package net.tin.tinmods;
+package net.hntin.tinmods;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -11,10 +11,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.tin.tinmods.block.ModBlocks;
-import net.tin.tinmods.item.ModCreativeTabs;
-import net.tin.tinmods.item.ModItems;
-import net.tin.tinmods.villager.ModVillagers;
+import net.hntin.tinmods.block.ModBlocks;
+import net.hntin.tinmods.item.ModCreativeTabs;
+import net.hntin.tinmods.item.ModItems;
+import net.hntin.tinmods.villager.ModVillagers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file

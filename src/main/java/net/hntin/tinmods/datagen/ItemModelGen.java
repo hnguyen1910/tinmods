@@ -1,4 +1,4 @@
-package net.tin.tinmods.datagen;
+package net.hntin.tinmods.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -6,8 +6,8 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
-import net.tin.tinmods.TinMods;
-import net.tin.tinmods.item.ModItems;
+import net.hntin.tinmods.TinMods;
+import net.hntin.tinmods.item.ModItems;
 
 public class ItemModelGen extends ItemModelProvider {
     public ItemModelGen(PackOutput output, ExistingFileHelper existingFileHelper) {

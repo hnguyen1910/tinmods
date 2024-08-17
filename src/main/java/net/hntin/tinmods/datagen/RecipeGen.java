@@ -1,4 +1,4 @@
-package net.tin.tinmods.datagen;
+package net.hntin.tinmods.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -9,9 +9,9 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import net.tin.tinmods.TinMods;
-import net.tin.tinmods.block.ModBlocks;
-import net.tin.tinmods.item.ModItems;
+import net.hntin.tinmods.TinMods;
+import net.hntin.tinmods.block.ModBlocks;
+import net.hntin.tinmods.item.ModItems;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -61,6 +61,17 @@ public class RecipeGen extends RecipeProvider implements IConditionBuilder {
                 .define('S', ItemTags.STAIRS)
                 .unlockedBy(getHasName(ModBlocks.THRONE_BLOCK.get()),has(ModBlocks.THRONE_BLOCK.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,Items.SADDLE,1)
+                .pattern("LLL")
+                .pattern("S S")
+                .pattern("I I")
+                .define('L',Items.LEATHER)
+                .define('I',Items.IRON_INGOT)
+                .define('S',Items.STRING)
+                .unlockedBy(getHasName(Items.SADDLE),has(Items.SADDLE))
+                .save(pWriter);
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

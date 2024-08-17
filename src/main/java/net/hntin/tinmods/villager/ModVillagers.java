@@ -1,4 +1,4 @@
-package net.tin.tinmods.villager;
+package net.hntin.tinmods.villager;
 
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.sounds.SoundEvents;
@@ -8,8 +8,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.tin.tinmods.TinMods;
-import net.tin.tinmods.block.ModBlocks;
+import net.hntin.tinmods.TinMods;
+import net.hntin.tinmods.block.ModBlocks;
 
 public class ModVillagers {
     public static final DeferredRegister<PoiType> POI_TYPES =
