@@ -44,43 +44,49 @@ public class ModEvents {
             Lvl2.add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD,2),
                     new ItemStack(Items.GOLD_INGOT,2),
-                    5,8,0.05f
+                    5,8,0.03f
             ));
             Lvl2.add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.RAW_GOLD,2),
                     new ItemStack(Items.EMERALD,2),
-                    5,8,0.05f
+                    5,8,0.03f
             ));
 
             // Level 3
             Lvl3.add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD,2),
                     new ItemStack(ModItems.COAL_DIAMOND.get(),1),
-                    6,8,0.1f
+                    6,8,0.05f
             ));
             Lvl3.add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.DIAMOND,1),
                     new ItemStack(Items.EMERALD,2),
-                    9,8,0.1f
+                    9,8,0.05f
             ));
 
             // Level 4
             Lvl4.add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD,10),
                     new ItemStack(Items.TOTEM_OF_UNDYING,1),
-                    3,8,0.3f
+                    3,8,0.07f
             ));
             Lvl4.add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD,15),
                     new ItemStack(Items.NETHERITE_INGOT,1),
-                    7,8,0.3f
+                    7,8,0.7f
             ));
 
             // Level 5
             Lvl5.add((pTrader, pRandom) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD,10),
                     new ItemStack(ModItems.POOP.get(),1),
-                    100,8,0.01f
+                    100,8,0.1f
+            ));
+
+            Lvl5.add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.ANCIENT_DEBRIS,2),
+                    new ItemStack(Items.EMERALD,10),
+                    10,100,0.1f
             ));
         }
 
