@@ -1,0 +1,9 @@
+{
+  "homepage": "https://github.com/hnguyen1910/tinmods/releases/latest/",
+  "${minecraft_version}": {
+    "${mod_version}": "UPDATE ${mod_version} : Full changelog on Github page."
+  },
+  "promos": {
+    "${minecraft_version}-recommended": "${mod_version}"
+  }
+}

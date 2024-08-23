@@ -1,5 +1,6 @@
 package net.hntin.tinmods.block;
 
+import net.hntin.tinmods.block.customBlock.ThroneBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -19,8 +20,11 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TinMods.MOD_ID);
 
     public static final RegistryObject<Block> THRONE_BLOCK = registerBlock("throne",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
-                    .strength(10f)));
+            () -> new ThroneBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    .noOcclusion()
+                    .strength(10f)
+                    .lightLevel(light -> 1)
+            ));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -2,6 +2,7 @@ package net.hntin.tinmods.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.properties.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -14,9 +15,18 @@ public class BlockStateGen extends BlockStateProvider {
         super(output, TinMods.MOD_ID, exFileHelper);
     }
 
+    private static final DirectionProperty HORIZONTAL_FACING = BlockStateProperties.HORIZONTAL_FACING;
+
     @Override
     protected void registerStatesAndModels() {
-        simpleBlockWithItem(ModBlocks.THRONE_BLOCK.get(), models().getExistingFile(modLoc("block/throne")));
+        getVariantBuilder(ModBlocks.THRONE_BLOCK.get())
+                .forAllStates(blockState ->
+                        ConfiguredModel.builder()
+                                .modelFile(models().getExistingFile(modLoc("block/throne")))
+                                .rotationY((int) blockState.getValue(HORIZONTAL_FACING).toYRot())
+                                .build()
+                );
+        simpleBlockItem(ModBlocks.THRONE_BLOCK.get(),models().getExistingFile(modLoc("block/throne")));
     }
 
 

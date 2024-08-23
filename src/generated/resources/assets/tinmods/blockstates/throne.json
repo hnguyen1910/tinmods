@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "tinmods:block/throne",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "tinmods:block/throne",
+      "y": 180
+    },
+    "facing=south": {
       "model": "tinmods:block/throne"
+    },
+    "facing=west": {
+      "model": "tinmods:block/throne",
+      "y": 90
     }
   }
 }
